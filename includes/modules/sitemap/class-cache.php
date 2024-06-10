@@ -48,8 +48,7 @@ class Cache {
 	 * The constructor.
 	 */
 	public function __construct() {
-		$this->wp_filesystem = Helper::get_filesystem();
-		$this->mode          = $this->is_writable() ? 'file' : 'db';
+		$this->mode          = 'db';
 
 		/**
 		 * Change sitemap caching mode (can be "file" or "db").
